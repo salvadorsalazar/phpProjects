@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/hello',function (){
+
+return response("<h1>heellooo wwoorrldd 2nd route view</h1>",200);
+});
+
+route::get('')
