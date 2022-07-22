@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,13 @@ Route::get('/hello',function (){
 return response("<h1>heellooo wwoorrldd 2nd route view</h1>",200);
 });
 
-route::get('')
+Route::get('/posts/{id}',function ($id){
+   // dd($id);
+    ddd($id);//for debugging
+return response('Post ' . $id);
+})->where('id', '[0-9]+');
+
+
+Route::get('/search', function(Request $request){
+dd($request);
+});
