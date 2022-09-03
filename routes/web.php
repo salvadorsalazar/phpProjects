@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/hello',function (){
 
-return response("<h1>heellooo wwoorrldd 2nd route view</h1>",200);
+return response("<h1>heellooo wwoorrldd 3rd route view</h1>",200);
 });
 
 Route::get('/posts/{id}',function ($id){
